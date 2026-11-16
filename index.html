@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حساباتي | تواصل معي</title>
+  <!-- استدعاء خط Cairo من Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- استدعاء أيقونات Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: 35px 25px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .profile-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #38bdf8;
+      margin-bottom: 15px;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+    }
+
+    .name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+
+    .bio {
+      font-size: 0.95rem;
+      color: #94a3b8;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 15px 20px;
+      border-radius: 14px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .link-btn i {
+      font-size: 1.3rem;
+    }
+
+    .link-btn:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    /* ألوان مخصصة عند الوقوف بالماوس على كل منصة */
+    .insta:hover { border-color: #e1306c; box-shadow: 0 5px 15px rgba(225, 48, 108, 0.3); }
+    .insta i { color: #e1306c; }
+
+    .fb:hover { border-color: #1877f2; box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3); }
+    .fb i { color: #1877f2; }
+
+    .tele:hover { border-color: #26a5e4; box-shadow: 0 5px 15px rgba(38, 165, 228, 0.3); }
+    .tele i { color: #26a5e4; }
+
+    .wa:hover { border-color: #25d366; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3); }
+    .wa i { color: #25d366; }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- حط رابط صورتك الشخصية هنا مكان الرابط ده -->
+    <img src="WhatsApp Image 2026-11-16 at 9.27.33 PM.jpeg" alt="صورتي الشخصية" class="profile-img">
+    
+    <!-- اكتب اسمك أو اسم البراند -->
+    <h1 class="name">Omar Ashraf</h1>
+    
+    <!-- اكتب نبذة مختصرة عنك -->
+    <p class="bio">أهلاً بيك! دي كل حساباتي الرسمية، تقدر تتابعني أو تتواصل معايا من خلال أي منصة تحت 👇</p>
+
+    <div class="links">
+      <!-- رابط الإنستغرام -->
+      <a href="https://www.instagram.com/its_omarvi?dlrf=MWRleHN6YWppbGFk" target="_blank" class="link-btn insta">
+        <i class="fab fa-instagram"></i>
+        <span>إنستغرام (Instagram)</span>
+      </a>
+
+      <!-- رابط الفيسبوك -->
+      <a href="https://www.facebook.com/share/19qgFDAQLr/" target="_blank" class="link-btn fb">
+        <i class="fab fa-facebook"></i>
+        <span>فيسبوك (Facebook)</span>
+      </a>
+
+      <!-- رابط التيليجرام -->
+      <a href="https://t.me/@moraaaaaaaaaaa1" target="_blank" class="link-btn tele">
+        <i class="fab fa-telegram"></i>
+        <span>تيليجرام (Telegram)</span>
+      </a>
+
+      <!-- رابط الواتساب (غير الرقم برقمك مع كود الدولة 20) -->
+      <a href="https://wa.me/201206252676" target="_blank" class="link-btn wa">
+        <i class="fab fa-whatsapp"></i>
+        <span>واتساب (WhatsApp)</span>
+      </a>
+    </div>
+
+    <div class="footer">
+      © 2026 جميع الحقوق محفوظة
+    </div>
+  </div>
+
+</body>
+</html>
